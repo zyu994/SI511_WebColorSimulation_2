@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Helper — Step 2</title><link rel="stylesheet" href="styles.css"></head><body>
+<div class="container"><div class="header"><h1>Compare similar shades</h1><small>Step 2 of 2 — Preview, compare, and inspect ΔE</small></div>
+<div class="card">
+    <p>This is a simulation — colors are approximate.
+        <br><br>
+        Use the lighting toggles to approximate your room's lighting. Add two colors to the compare box to see them side-by-side. The CIE ΔE*ab is shown as an objective difference measure.
+        <br><br>
+        <strong>Note on finishes:</strong>Claro switches are available in <em>gloss</em>, <em>satin</em>, and some lines offer <em>metal</em> finishes. Finish (surface texture) can change how a color looks. Use the <strong>Finish</strong> filter and the finish badges on each swatch to help you choose.
+</p>
+<div class="controls"><span class="label">Lighting:</span><span class="seg" role="tablist" aria-label="Lighting presets">
+<button data-light="daylight" class="active" role="tab" aria-selected="true">Daylight</button>
+<button data-light="warm" role="tab">Warm</button>
+<button data-light="cool" role="tab">Cool</button>
+<button data-light="dim" role="tab">Dim</button></span></div>
+<div class="controls" style="margin-top:10px">
+  <span class="label">Finish:</span>
+  <span class="seg" role="tablist" aria-label="Finish filter">
+    <button data-finish="all" class="active" role="tab" aria-selected="true">All</button>
+    <button data-finish="gloss" role="tab">Gloss</button>
+    <button data-finish="satin" role="tab">Satin</button>
+    <button data-finish="metal" role="tab">Metal</button>
+  </span>
+</div>
+
+<div id="grid" class="grid" aria-live="polite"></div>
+<div class="compare" aria-live="polite"><h3>Side-by-side compare</h3>
+<div class="pair"><div class="box" id="cmpA" role="img" aria-label="Comparison A"></div><div class="box" id="cmpB" role="img" aria-label="Comparison B"></div></div>
+<div class="help">A: <span id="cmpALabel">—</span> &nbsp; | &nbsp; B: <span id="cmpBLabel">—</span></div>
+<div class="help" id="cmpDeltaE">ΔE*ab = —</div></div>
+<div class="footer"><button class="button ghost" onclick="goBack()">⟵ Go Back</button>
+<a class="button back" href="index.html">⟵ Back to source</a>
+<a class="button primary" href="https://www.homedepot.com/p/Lutron-Claro-On-Off-Switch-15-Amp-Single-Pole-Light-Almond-CA-1PS-LA-CA-1PS-LA/203737029" target="_blank" rel="noopener">Return to product page</a></div>
+ <a class="button ghost" 
+     href="https://www.prolighting.com/brands/lutrondimmers/luclsesw/swatches.html" 
+     target="_blank" rel="noopener"
+     aria-label="Order a Lutron color swatch for accurate matching">
+    Order a color swatch
+  </a>
+<p class="small">Recommendation: Evaluate under daylight and warm presets. For very close neighbors (ΔE between ~2 and 5) or if unsure, order a physical swatch before purchasing.</p></div></div>
+<script src="script.js"></script></body></html>
