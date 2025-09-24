@@ -22,7 +22,7 @@ body{margin:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Ro
 .button.ghost{background:#fff; }
 /* {border:1px solid #f97316;} */
 .button.back{background:#111;color:#fff;border-color:#111}
-.button.swatch{background:#fff; }
+.button.swatch{background:#fff}
 .label{font-weight:600;margin:8px 0 4px}
 .select, .input{width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;outline:none;}
 .select:focus, .input:focus{box-shadow:0 0 0 4px var(--ring)}
